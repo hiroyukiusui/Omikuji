@@ -2,15 +2,19 @@ package com.example.omikuji
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
-import java.util.Random
+import kotlinx.android.synthetic.main.main.*
+import kotlinx.android.synthetic.main.omikuji.*
 
 
 class OmikujiActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.omikuji)
+
+        imageView.setImageResource(R.drawable.result1)
+
+/*
         //文字を入力する
         val rnd = (1..20).random()
         val number = rnd
@@ -26,5 +30,6 @@ class OmikujiActivity : AppCompatActivity() {
         //おみくじ欄から取得
         val str = omikujiShelf[number]
         hello_View.text = "$str ${number}"
+*/
     }
 }
